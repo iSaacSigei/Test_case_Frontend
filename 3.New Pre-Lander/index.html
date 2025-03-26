@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesco Giveaway - Win an iPhone 14 Pro</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Flash Sales Banner -->
+    <div class="banner">
+        <span class="flash-text">⚡ Flash Sales</span>
+        <span class="live-text">🔴 Live Now</span>
+    </div>
+
+    <!-- Tesco-Inspired Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">🛒 <strong>Tescon</strong></div>
+        <div class="nav-center">
+            <input type="text" placeholder="Search for products...">
+        </div>
+        <div class="nav-right">
+            <span class="icon"><i class="fa fa-user" aria-hidden="true" style="color:#333"></i></span>
+            <span class="icon"><i class="fa fa-shopping-cart" style="color:#333"></i></span>
+        </div>
+    </nav>
+    <div class="">
+        <!-- Welcome Screen -->
+        <div id="welcome" class="section container">
+            <h1>🎉 Tesco Customer Reward Program 🎉</h1>
+            <p>Answer 4 questions for a chance to win an <strong>iPhone 14 Pro</strong> for just £2!</p>
+            <button onclick="startQuiz()">Start Now</button>
+        </div>
+          <!-- Quiz Section -->
+          <div id="quiz" class="section hidden container">
+            <h2>Answer these questions:</h2>
+            <div id="question-container"></div>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Mini-Game -->
+        <div id="game" class="section hidden container">
+            <h2>🎯 Lucky Click Game 🎯</h2>
+            <p>Click on the correct Tesco shopping bag to reveal your prize!</p>
+            <div class="game-grid">
+                <div class="bag" onclick="checkWin(this)"></div>
+                <div class="bag" onclick="checkWin(this)"></div>
+                <div class="bag" onclick="checkWin(this)"></div>
+            </div>
+        </div>
+
+        <!-- Prize Section -->
+        <div id="prize" class="section hidden container">
+            <h2>🎉 Congratulations! 🎉</h2>
+            <p>You’ve won an <strong>iPhone 14 Pro</strong>! Claim it now for only £2.</p>
+            
+            <div class="prize-content">
+                <img src="./images/iPhone-14-Pro-a-1024x1024.webp" alt="iPhone 14 Pro">
+                <div class="prize-details">
+                    <h3>iPhone 14 Pro - 256GB</h3>
+                    <p>Experience the power of the new iPhone 14 Pro with a stunning **Super Retina XDR display**, **A16 Bionic chip**, and **Dynamic Island** for a next-gen experience.</p>
+                    <a href="#" class="view-more">View More</a>
+                </div>
+            </div>
+
+            <button class="claim-btn">Claim Now</button>
+        </div>
+
+        <!-- Electronics Deals Section -->
+        <div class="deals-container">
+            <h2>🔥 Hot Electronics Deals 🔥</h2>
+            <div class="deals-grid">
+                <!-- Product 1 -->
+                <div class="deal-card">
+                    <img src="./images/gaming.webp" alt="Gaming Laptop">
+                    <h3>Gaming Laptop</h3>
+                    <p class="old-price">Was $1,900</p>
+                    <p class="new-price">Now Ksh 120,000</p>
+                    <p class="stock">⏳ 13 items left in stock</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="deal-card">
+                    <img src="./images/lg.png" alt="Smart TV">
+                    <h3>Smart TV 55” 4K</h3>
+                    <p class="old-price">Was $800</p>
+                    <p class="new-price">Now Ksh 60,000</p>
+                    <p class="stock">⏳ 13 items left in stock</p>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="deal-card">
+                    <img src="./images/s23.jpeg" alt="Smartphone">
+                    <h3>Samsung Galaxy S23</h3>
+                    <p class="old-price">Was $1,200</p>
+                    <p class="new-price">Now Ksh 90,000</p>
+                    <p class="stock">⏳ 13 items left in stock</p>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="deal-card">
+                    <img src="./images/hp.webp" alt="Wireless Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <p class="old-price">Was $300</p>
+                    <p class="new-price">Now Ksh 20,000</p>
+                    <p class="stock">⏳ 13 items left in stock</p>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="deal-card">
+                    <img src="./images/JBL-Flip-7.jpg" alt="Bluetooth Speaker">
+                    <h3>Bluetooth Speaker</h3>
+                    <p class="old-price">Was $250</p>
+                    <p class="new-price">Now Ksh 18,000</p>
+                    <p class="stock">⏳ 13 items left in stock</p>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="deal-card">
+                    <img src="./images/sw.webp" alt="Smart Watch">
+                    <h3>Smart Watch</h3>
+                    <p class="old-price">Was $500</p>
+                    <p class="new-price">Now Ksh 35,000</p>
+                    <p class="stock">⏳ 13 items left in stock</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

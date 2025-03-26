@@ -1,0 +1,292 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding-top: 110px; 
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flash Sales Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 15px;
+  position: fixed;
+  top: 50px; /* Below the banner */
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Navbar Left (Brand) */
+.nav-left {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0056b3;
+  flex: 1;
+}
+
+/* Navbar Center (Search Bar) */
+.nav-center {
+  display: flex;
+  width: 40%;
+  flex-grow: 2;
+}
+
+.nav-center input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.nav-center button {
+  background: #ff0000;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.nav-center button:hover {
+  background: #cc0000;
+}
+
+/* Navbar Right (Icons) */
+.nav-right {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  justify-content: flex-end; 
+}
+
+.nav-right .icon i {
+  font-size: 24px;
+  padding-right: 24px;
+}
+
+/* Animations for Banner Text */
+.flash-text {
+  animation: pulse 1.5s infinite alternate;
+}
+
+.live-text {
+  animation: blink 1s infinite alternate;
+  padding-right: 24px;
+}
+
+/* Flash Sales Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Blinking Effect */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Headings */
+h1,
+h2 {
+  color: #0056b3;
+}
+
+/* Buttons */
+button {
+  background: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  margin: 2px;
+}
+
+button:hover {
+  background: #cc0000;
+}
+/* Deals Section */
+.deals-container {
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.deals-container h2 {
+  color: #ff0000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Deals Grid */
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Deal Cards */
+.deal-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.deal-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product Images */
+.deal-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product Name */
+.deal-card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Old Price */
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+/* New Price */
+.new-price {
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Stock Left */
+.stock {
+  color: #007b00;
+  font-size: 14px;
+}
+
+/* Hide elements initially */
+.hidden {
+  display: none;
+}
+
+/* Mini-Game Styling */
+.game-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.bag {
+  width: 80px;
+  height: 100px;
+  background: url("../images/luckyBox.jpg") no-repeat center/cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.bag:hover {
+  transform: scale(1.1);
+}
+/* Prize Section Styling */
+.prize-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.prize-content img {
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prize-details {
+  text-align: left;
+  max-width: 300px;
+}
+
+.prize-details h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.prize-details p {
+  font-size: 14px;
+  color: #555;
+}
+
+.view-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+}
