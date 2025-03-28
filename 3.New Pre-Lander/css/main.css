@@ -290,3 +290,17 @@ button:hover {
 .view-more:hover {
   text-decoration: underline;
 }
+
+/* Confetti Canvas */
+#confettiCanvas {
+  display: block; 
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* So it doesn't interfere with clicks */
+  z-index: 9999;
+}
+
